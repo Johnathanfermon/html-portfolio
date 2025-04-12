@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vijaykumar's Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #680163, #5a0017, #0f037e);
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      padding: 2rem;
+      animation: fadeInDown 1.5s ease-out;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      position: relative;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #1e1e2f;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-title {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #0ff;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      animation: slideUp 1s ease forwards;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(100%); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    footer {
+      padding: 2rem;
+      background: #111;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .links {
+      margin-top: 1rem;
+    }
+
+    .links a {
+      color: #0ff;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 Vijaykumar's Portfolio 🚀</h1>
+
+  <div class="gallery">
+    <a href="public/movie-ranking.html" class="card">
+      <img src="assets/images/Movies.png" alt="Movie Ranking Preview">
+      <div class="card-title">🎬 Movie Rankings</div>
+    </a>
+    <a href="public/about.html" class="card">
+      <img src="assets/images/about.png" alt="About Preview">
+      <div class="card-title">👨‍💼 About Me</div>
+    </a>
+    <a href="public/birthday-invite.html" class="card">
+      <img src="assets/images/Birthday.png" alt="Birthday Preview">
+      <div class="card-title">🎉 Birthday Invite</div>
+    </a>
+    <a href="public/contact.html" class="card">
+      <img src="assets/images/Profile.png" alt="Contact Preview">
+      <div class="card-title">📞 Contact</div>
+    </a>
+  </div>
+
+
+  <footer>
+    © 2025 Vijaykumar | Designed with ❤️ and futuristic vibes<br>
+    <div class="links">
+      <a href="https://www.netflix.com" target="_blank">Watch on Netflix</a>
+      <a href="https://www.youtube.com" target="_blank">Watch on YouTube</a>
+      <a href="mailto:vijay@example.com">📧 Email Me</a>
+
+    </div>
+  </footer>
+</body>
+</html>
